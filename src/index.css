@@ -1,0 +1,138 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background:hsl(210, 36%, 96%);
+  color: hsl(209, 61%, 16%);;
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+.row{
+ height: 100vh;
+}
+h1,
+h2,
+h3,
+h4 {
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 1rem;
+}
+p {
+  margin-bottom: 1.5rem;
+  color: hsl(210, 22%, 49%);;
+}
+
+ .tourCard{
+  background-color: #fff;
+  width: 40%;
+  margin: auto;
+border-radius: 0.25rem ;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+transition: all 0.3 linear;
+
+}
+
+.tourCard img{
+  height: 20rem;
+  object-fit: cover;
+  border-top-right-radius: .25rem;
+  border-top-left-radius: .25rem;
+
+}
+.tourCard:hover{
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.underline {
+  width: 6rem;
+  height: 0.25rem;
+  background: hsl(205, 78%, 60%);;
+  margin-left: auto;
+  margin-right: auto;
+}
+footer{
+  padding: 1.2rem !important;
+  padding-bottom: 0.7rem;
+}
+.tour-info{
+  margin-bottom: 1.5rem;
+}
+.tour-price{
+  color: hsl(205, 78%, 60%);
+background:hsl(205, 100%, 96%);;
+padding: 0.25rem 0.5rem;
+border-radius: 0.25rem;
+}
+.btn-outline-danger{
+  width: 200px;
+
+}
+.btn-outline-danger:hover{
+  background-color: transparent;
+  color: #dc3545;;
+} 
+.btnRead{
+  background: transparent;
+  border-color: transparent;
+  text-transform: capitalize;
+  color: hsl(205, 78%, 60%);
+  font-size: 1rem;
+  cursor: pointer;
+  padding-left: 0.2rem;
+
+}
+.btnRefresh{
+  background:  hsl(205, 78%, 60%);
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius:0.25rem;
+  text-transform: capitalize;
+  color:#fff;
+  border-color: transparent;
+  cursor: pointer;
+  margin-top: 2rem;
+  font-size: 1.2rem;
+
+}
+@media screen and (max-width :575.98px) {
+  .tourCard{
+    width: 90%;
+  }
+
+ }
+ @media screen and (min-width :576px) and (max-width :767.98px){
+  .tourCard{
+    width: 95%;
+  }
+}
+ @media screen and (min-width :768px) and (max-width :991.98px){
+
+  .tourCard{
+    width: 65%;
+  }
+ }
+ @media screen and (min-width :992px) and (max-width :1199.98px){
+  .tourCard{
+    width: 55%;
+  }
+ }
